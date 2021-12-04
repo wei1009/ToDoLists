@@ -1,0 +1,102 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+.header{
+    background-color: #b5838d;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    margin: 0 ;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+
+
+  }
+
+.addBtn {
+    margin: 0;
+    background-color: #d3d3d3;
+    border: none;
+    padding: 10px;
+    width: 25%;
+    transition: 0.3s;
+    color: #6d6875;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    display:flex;
+    justify-content: space-between;
+
+
+}
+
+/*Set color of even row*/
+li:nth-of-type(2n){
+    background-color: #eee4e1;
+
+}
+
+/*Set color when the mouse go through*/
+li:hover{
+    background-color: #bcd4e6;
+}
+
+/*Set a pseudo element when crossOut happen and set the mark before the content*/
+.crossOut::before {
+    content: 'v';
+    position: absolute;
+    color: white;
+    top: 13px;
+    left: 10px;
+    height: 15px;
+    width: 7px;
+  }
+
+li.crossOut {
+    background-color: #4f5d75;
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+.rmBtn {
+    background-color:#b392ac;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    border: none;
+    width:6em;
+}
+
+/*Set color when the mouse go through the button*/
+.rmBtn:hover {
+    background-color:#ea9ab2;
+}
+
+.toDoList {
+    word-break:break-all;
+    /* width:80%; */
+}
